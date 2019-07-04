@@ -8,17 +8,17 @@
       <div class="card-body">
         <h5 class="card-title">Please enter your credentials</h5>
         <div class="text-left">
-          <div class="input-group mb-3">
+          <div class="input-group mb-1">
             <mat-form-field>
-              <input matInput placeholder="User name" [formControl]="username">
+              <input matInput placeholder="User name" [formControl]="username" required>
             </mat-form-field>
           </div>
-          <div class="input-group mb-3">
+          <div class="input-group mb-1">
             <mat-form-field>
-              <input matInput placeholder="Password" [formControl]="password" type="password">
+              <input matInput placeholder="Password" [formControl]="password" type="password" required>
             </mat-form-field>
           </div>
-          <div class="input-group mb-3">
+          <div class="input-group">
             <mat-checkbox class="example-margin" [formControl]="rememberMe">Remember Me
             </mat-checkbox>
           </div>
